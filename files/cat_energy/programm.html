@@ -1,0 +1,115 @@
+
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/style.min.css?_v=20220718203624"/>
+    <title>Cat energy</title>
+  </head>
+  <body>
+    <header class="header header--catalog">
+      <div class="header__phone"><a class="logo" href="#"><img class="logo__icon" src="img/logo.svg" alt=""/>
+          <p class="logo__text"><span class="logo__text--bold">Cat</span> energy</p></a><a class="burger" href="#">
+          <div class="burger__line"> </div>
+          <div class="burger__line"> </div>
+          <div class="burger__line"></div></a></div>
+      <nav class="nav nav__dark"> <a class="nav__link" href="index.html">Главная</a><a class="nav__link nav__link--active" href="catalog.html">Каталог продукции</a><a class="nav__link" href="programm.html">Подбор программы</a></nav>
+    </header>
+    <div class="container">
+      <form class="form" action="handler.php" method="post">
+        <h1 class="title form__title">Подбор программы</h1>
+        <h3 class="form__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</h3>
+        <div class="form__area">
+          <div class="form__block"> 
+            <div class="form__item">
+              <h3 class="form__name">Имя:*</h3>
+              <input class="form__input" type="text" name="name"/>
+            </div>
+            <div class="form__item">
+              <h3 class="form__name">Вес<span>(кг):*</h3>
+              <input class="form__input" type="text" name="weight"/>
+            </div>
+            <div class="form__item">
+              <h3 class="form__name">Возраст<span>(лет):*</h3>
+              <input class="form__input" type="text" name="age"/>
+            </div>
+          </div>
+          <div class="form__block--radio">
+            <label class="form__item">
+              <input class="form__radio-button" type="radio" name="radio_input" value="Похудение"/>
+              <h3 class="form__radio-name">Похудение</h3>
+            </label>
+            <label class="form__item">
+              <input class="form__radio-button" type="radio" name="radio_input" value="Набор массы"/>
+              <h3 class="form__radio-name">Набор массы</h3>
+            </label>
+            <label class="form__item">
+              <input class="form__radio-button" type="radio" name="radio_input" value="Не знаю"/>
+              <h3 class="form__radio-name">Не знаю (нужен ваш совет)</h3>
+            </label>
+          </div>
+        </div>
+        <h1 class="title title__wl">Контактные данные (владельца кота)</h1>
+        <div class="form__area">
+          <div class="form__block"> 
+            <div class="form__item">
+              <h3 class="form__name">Email:*</h3>
+              <input class="form__input form__input--mail" type="email" name="email"/>
+            </div>
+          </div>
+          <div class="form__block"> 
+            <div class="form__item">
+              <h3 class="form__name">Телефон:*</h3>
+              <input class="form__input form__input--tel" type="tel" name="tel"/>
+            </div>
+          </div>
+        </div>
+        <h1 class="title title__wl">Комментарий</h1>
+        <textarea class="form__textarea" rows="5" name="textarea"></textarea>
+        <h1 class="title title__wl">Дополнительно</h1>
+        <div class="form__area form__area--checkbox"> 
+          <label class="form__item">
+            <input class="form__checkbox" type="checkbox" name="1-cb"/>
+            <h3 class="form__checkbox-name">Сахарозаменитель</h3>
+          </label>
+          <label class="form__item">
+            <input class="form__checkbox" type="checkbox" name="2-cb"/>
+            <h3 class="form__checkbox-name">Питьевая вода</h3>
+          </label>
+          <label class="form__item">
+            <input class="form__checkbox" type="checkbox" name="3-cb"/>
+            <h3 class="form__checkbox-name">Молоко</h3>
+          </label>
+          <label class="form__item">
+            <input class="form__checkbox" type="checkbox" name="4-cb"/>
+            <h3 class="form__checkbox-name">Витамины</h3>
+          </label>
+        </div>
+        <div class="form__area--button">
+          <button class="button form__button" type="submit" name="form_submit">Отправить заявку</button>
+          <div class="form__item">
+            <p class="form__footer-text">* - Обязательные поля</p>
+          </div>
+        </div>
+      </form>
+    </div>
+    <content class="map"> 
+      <div class="container">
+        <div class="map__card map__card--dark">
+          <h3 class="map__title">приглашаем к сотрудничеству дилеров!</h3>
+          <div class="map__text"> 
+            <p class="map__adress">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="map__city">Санкт-Петербург</p>
+          </div>
+        </div>
+      </div>
+      <iframe class="map__source" src="https://yandex.ru/map-widget/v1/?um=constructor%3Adea5a9e8a92e44816bc108a98aaa4b8337e18fa6f39fd64fb8c3283a2aa30543&amp;amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+    </content>
+    <footer class="footer">
+      <div class="container"><a class="logo" href="#">
+          <p class="logo__text"><span class="logo__text--bold">Cat</span> energy</p></a></div>
+    </footer>
+    <script src="js/script.js?_v=20220718203624"></script>
+  </body>
+</html>
