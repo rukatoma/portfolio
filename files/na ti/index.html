@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/wrapper.css">
+  <link rel="stylesheet" href="./css/circle.css">
+  <link rel="stylesheet" href="./css/fm.revealator.jquery.css">
+  <script src="./js/jquery-1.11.3.min.js"></script>
+  <script src="./js/fm.revealator.jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+  <title>Давай на ты</title>
+</head>
+<body>
+  <div class="circle-frame" id="scroll-frame">
+    <div class="circle" id="circle"></div>
+    <div class="circle--dodge" id="circle-dodge"></div>
+  </div>
+  <div class="wrapper">
+    <header class="header">
+      <img src="./img/logo.svg" alt="" class="logo-img">
+      <nav class="nav" id="nav">
+        <a href="#aboutus" class="nav-link" id="nav-link">О нас</a>
+        <a href="#projects" class="nav-link" id="nav-link">Проекты</a>
+        <a href="#services" class="nav-link" id="nav-link">Услуги</a>
+        <a href="#merch" class="nav-link" id="nav-link">Мерч</a>
+        <a href="#contacts" class="nav-link" id="nav-link">Контакты</a>
+      </nav>
+    </header>
+    <hero class="hero" id="hero">
+      <div></div>
+      <div class="hero-content">
+        <h1 class="hero-title">Давай на ты</h1>
+        <div id="typed-strings">
+          <span>выдающимися</span>
+          <span>вдохновляющими</span>
+          <span>запоминающимися</span>
+        </div>
+        <h2 class="hero-subtitle">Full-stack маркетинг агентство<br>Делаем компании <i id="typed"></i></h2>
+        <a href="#startproject" class="button">Начать проект</a>
+      </div>
+    </hero>
+      <section class="services">
+        <div class="services__grid">
+          <div class="services__item revealator-slideright revealator-delay2">
+            <img src="./img/icon/smm_icon.svg" alt="" class="services__item-icon">
+            <div class="services__item-content">
+              <h3 class="services__item-name">SMM</h3>
+              <p class="services__item-text">Продвигаем ваш бренд в соцсетях. Создаем контент, регистрируем и оформляем аккаунты, настраиваем таргетированную рекламу и анализируем результаты.</p>
+            </div>
+          </div>
+
+          <div class="services__item revealator-slidedown revealator-delay3">
+            <img src="./img/icon/diagnostics_icon.svg" alt="" class="services__item-icon">
+            <div class="services__item-content">
+              <h3 class="services__item-name">Диагностика узких мест</h3>
+              <p class="services__item-text">Анализируем текущее состояния вашего бизнеса и рынка, определяем целевую аудиторию и конкурентов. Разрабатываем индивидуальные стратегии, которые помогут достичь бизнес-целей и повысить эффективность.</p>
+            </div>
+          </div>
+
+          <div class="services__item revealator-slideleft revealator-delay4">
+            <img src="./img/icon/branding_icon.svg" alt="" class="services__item-icon">
+            <div class="services__item-content">
+              <h3 class="services__item-name">Брендинг и дизайн</h3>
+              <p class="services__item-text">Создаем уникальный фирменный стиль вашей компании: разрабатываем названия и слоганы, логотипы, маркетинговые материалы для сайта, соцсетей, рекламных кампаний и печатной продукции.</p>
+            </div>
+          </div>
+
+          <div class="services__item revealator-slideright revealator-delay5">
+            <img src="./img/icon/naming_icon.svg" alt="" class="services__item-icon">
+            <div class="services__item-content">
+              <h3 class="services__item-name">Нейминг и айдентика</h3>
+              <p class="services__item-text">Создаем уникальный фирменный стиль вашей компании: разрабатываем названия и слоганы, логотипы, маркетинговые материалы для сайта, соцсетей, рекламных кампаний и печатной продукции.</p>
+            </div>
+          </div>
+
+          <div class="services__item revealator-slideup revealator-delay6">
+            <img src="./img/icon/ux_icon.svg" alt="" class="services__item-icon">
+            <div class="services__item-content">
+              <h3 class="services__item-name">UX-дизайн</h3>
+              <p class="services__item-text">Делаем ваш продукт удобным и понятным для пользователей. Мы исследуем, создаем прототипы интерфейсов и тестируем их, чтобы улучшить пользовательский опыт ваших клиентов.</p>
+            </div>
+          </div>
+
+          <div class="services__item revealator-slideleft revealator-delay7">
+            <img src="./img/icon/seo_icon.svg" alt="" class="services__item-icon">
+            <div class="services__item-content">
+              <h3 class="services__item-name">SEO</h3>
+              <p class="services__item-text">Оптимизируем ваш сайт и повысим его видимость в поисковых системах, чтобы увеличить органический трафик.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>

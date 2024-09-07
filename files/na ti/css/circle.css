@@ -1,0 +1,49 @@
+.circle-frame {
+  position: fixed;
+  z-index: -1;
+
+  top: -10vh;
+  left: -10vw;
+
+  width: 120vw;
+  height: 120vh;
+}
+
+.circle {
+  position: absolute;
+  z-index: 100;
+
+  top: 220px;
+  left: 320px;
+
+  width: 500px;
+  height: 500px;
+
+  background: radial-gradient(52.48% 52.48% at 19.02% 93.12%, #79A0FF 1.96%, rgba(121, 160, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(92.96% 92.96% at 90.32% 58.11%, #FF603D 1.96%, rgba(255, 96, 61, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, radial-gradient(109.78% 109.78% at 5.75% 37.01%, #FF93D4 0%, rgba(255, 147, 212, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */, linear-gradient(143.36deg, #015172 10.39%, #FF603D 47.45%, #FF93D4 86.02%);
+  mix-blend-mode: normal;
+  filter: blur(35px);
+  transform: rotate(-165deg);
+  border-radius: 50%;
+
+  transition: transform ease 0.3s;
+}
+
+.circle--dodge {
+  position: absolute;
+  z-index: -1;
+  top: 35vh;
+  left: 20vw;
+
+  width: 480px;
+  height: 480px;
+
+  border-radius: 70%;
+
+  transform: rotate(-61deg);
+
+  background: linear-gradient(144.97deg, #015172 -27.78%, #FF603D 27.97%, #FF93D4 85.99%);
+  mix-blend-mode: color-dodge;
+  opacity: 0.5;
+  filter: blur(100px);
+  transform: rotate(61.94deg);
+}
